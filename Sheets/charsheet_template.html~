@@ -1,0 +1,64 @@
+<!DOCTYPE HTML">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>	Minimized Pathfinder Char. </title>
+		<link rel="stylesheet" href="style.css">
+		<script src="scripts.js"> </script>
+	</head>
+	<body>
+		<section id="generalinfo" contentEditable="false">
+			<h1> General Information </h1>
+			<section contentEditable="false" class="generalinfobase">
+			<div id="table">
+				<div id="row">
+					<span id="cell green"><input title="PlayerName" class="generalinfo" type="text" value="Player Name" /></span>
+					<span id="cell width70"><input title="CharacterName" class="generalinfo" type="text" value="CharacterName" /></span>
+				</div>
+				<div id="row">
+					<span id="cell"><input class="generalinfo" title="Age" type="text" value="This code is not of the legal age :|" /></span>
+					<span id="cell"><input class="generalinfo" title="Race" type="text" value="Must not reference ghost stories" /> </span>
+					<span id="cell"><input class="generalinfo" title="Brahmin" type="text" value="Class" /> </span>
+				</div>
+			</div>
+			</section>
+		</section>
+		<section contentEditable="false">
+			<h1> Stats </h1>
+			<div> Strength: <input id="strength" value="12" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultstrength').value = makestatroll(document.getElementById('strength').value)"/> <output name="Result" id="resultstrength" type="text" value="" > </div>
+			<div> Dexterity: <input id="dexterity" value="13" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultdexterity').value = makestatroll(document.getElementById('dexterity').value)"/> <output name="Result" id="resultdexterity" type="text" value="" > </div>
+			<div> Constitution: <input id="constitution" value="9" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultconstitution').value = makestatroll(document.getElementById('constitution').value)"/> <output name="Result" id="resultconstitution" type="text" value="" > </div>
+			<div> Intelligence: <input id="intelligence" value="16" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultintelligence').value = makestatroll(document.getElementById('intelligence').value)"/> <output name="Result" id="resultintelligence" type="text" value="" > </div>
+			<div> Wisdom: <input id="wisdom" value="8" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultwisdom').value = makestatroll(document.getElementById('wisdom').value)"/> <output name="Result" id="resultwisdom" type="text" value="" > </div>
+			<div> Charisma: <input id="charisma" value="2" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultcharisma').value = makestatroll(document.getElementById('charisma').value)"/> <output name="Result" id="resultcharisma" type="text" value="" > </div>
+			
+		</section>
+		<section>
+			<h1> Skills </h1>
+			<div> riding: <input id="riding" value="3" type="number"> 
+			<input type="button" style="font-size:9pt" value="Roll" onclick="document.getElementById('resultriding').value = makeskillroll(document.getElementById('dexterity').value, document.getElementById('riding').value)"/> <output name="Result" id="resultriding" type="text" value="" > </div>
+		</section>
+		<section>
+			<h1> Items </h1>
+			
+			<div><input type="button" style="font-size:9pt" value="DamageRoll" onclick="document.getElementById('resultdamage').value = makedamageroll(document.getElementById('eqweap').value, document.getElementById('strength').value)"/> <output name="Result" id="resultdamage" type="text" value="" /></div>
+			<div id="item" contentEditable="False">
+				<p> ShortSword </p> <input id="eqweap" value="2d8"/>
+				<section contentEditable="True" id="description">
+					<p> A well worn sword. Decent make.</p>
+				</section>
+			</div>
+		</section>
+		<section>
+			<h1> Character Description </h1>
+			<p contentEditable="true"> <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</section>	
+		<div> Please leave Feedback on the github page for now :) </div>
+	
+	</body>
