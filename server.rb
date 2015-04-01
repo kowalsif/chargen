@@ -1,5 +1,7 @@
 require 'sinatra'
+require 'haml'
 
 get '/' do 
-	"Hello world!"
+	haml :hello, locals: { foo: "bar" }
 end
+
