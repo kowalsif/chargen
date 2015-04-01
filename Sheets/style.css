@@ -1,0 +1,16 @@
+strong {color: red; }
+
+.green {color: green; }
+
+.table {
+	overflow: hidden;
+	width: 600px
+}
+
+
+.cell {
+	float: left;
+	width: 33%;
+}
+
+
