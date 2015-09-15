@@ -14,8 +14,8 @@ class Writer
   end
   
   def close()
-    @file.write("</body>")
-    @file.close
+    #@file.write("</body>")
+    #@file.close
   end
   
   def str_num_level_increments(str)
